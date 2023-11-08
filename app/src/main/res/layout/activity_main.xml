@@ -14,7 +14,7 @@
         android:textSize="24sp"
         android:textColor="@color/color_orange"
         android:gravity="center"
-        android:text="Cadastro"
+        android:text="@string/txt_title"
         android:textStyle="bold"/>
     <EditText
         android:layout_width="match_parent"
@@ -22,25 +22,25 @@
         android:inputType="textPersonName"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:hint="Insira seu nome"/>
+        android:hint="@string/hint_insira_seu_nome"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
-        android:hint="Insira seu sobrenome"/>
+        android:hint="@string/hint_insira_seu_sobrenome"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
-        android:hint="Insira seu curso"/>
+        android:hint="@string/hint_insira_seu_curso"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
-        android:hint="Insira seu telefone"/>
+        android:hint="@string/hint_insira_seu_telefone"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
             android:layout_marginHorizontal="16dp"
             android:backgroundTint="@color/color_orange"
             android:layout_weight="1"
-            android:text="Limpar"/>
+            android:text="@string/txt_btn_limpar"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
             android:layout_marginHorizontal="16dp"
             android:backgroundTint="@color/color_orange"
             android:layout_weight="1"
-            android:text="Salvar"/>
+            android:text="@string/txt_btn_salvar"/>
 
     </LinearLayout>
 
@@ -71,6 +71,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:backgroundTint="@color/color_orange"
-        android:text="Finalizar"/>
+        android:text="@string/txt_btn_finalizar"/>
 
 </LinearLayout>
