@@ -21,25 +21,25 @@
         android:inputType="textPersonName"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="Insira seu nome"/>
+        android:hint="Insira seu nome"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
-        android:text="Insira seu sobrenome"/>
+        android:hint="Insira seu sobrenome"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
-        android:text="Insira seu nome"/>
+        android:hint="Insira seu nome"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
-        android:text="Insira seu telefone"/>
+        android:hint="Insira seu telefone"/>
 
     <LinearLayout
         android:layout_width="match_parent"
