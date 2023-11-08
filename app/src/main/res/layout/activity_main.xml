@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textSize="24sp"
+        android:textColor="@color/color_orange"
         android:gravity="center"
         android:text="Cadastro"
         android:textStyle="bold"/>
@@ -33,7 +34,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
-        android:hint="Insira seu nome"/>
+        android:hint="Insira seu curso"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,6 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
+            android:backgroundTint="@color/color_orange"
             android:layout_weight="1"
             android:text="Limpar"/>
 
@@ -58,6 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
+            android:backgroundTint="@color/color_orange"
             android:layout_weight="1"
             android:text="Salvar"/>
 
@@ -67,6 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:backgroundTint="@color/color_orange"
         android:text="Finalizar"/>
 
 </LinearLayout>
