@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">AppListaVip</string>
     <string name="txt_title">Cadastro</string>
     <string name="hint_insira_seu_nome">Insira seu nome</string>
+    <string name="hint_insira_seu_sobrenome">Insira seu sobrenome</string>
     <string name="hint_insira_seu_curso">Insira seu curso</string>
     <string name="hint_insira_seu_telefone">Insira seu telefone</string>
     <string name="txt_btn_limpar">Limpar</string>
     <string name="txt_btn_salvar">Salvar</string>
+    <string name="txt_btn_finalizar">Finalizar</string>
 </resources>
