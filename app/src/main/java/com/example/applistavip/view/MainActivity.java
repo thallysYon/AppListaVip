@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         EditText edtTxtCurso = findViewById(R.id.edtTxtCurso);
         EditText edtTxtTelefone = findViewById(R.id.edtTxtTelefone);
 
-        Button  btnLimpar = findViewById(R.id.btnLimpar);
-        Button  btnSalvar = findViewById(R.id.btnSalvar);
-        Button  btnFinalizar = findViewById(R.id.btnFinalizar);
+        Button btnLimpar = findViewById(R.id.btnLimpar);
+        Button btnSalvar = findViewById(R.id.btnSalvar);
+        Button btnFinalizar = findViewById(R.id.btnFinalizar);
 
         btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
