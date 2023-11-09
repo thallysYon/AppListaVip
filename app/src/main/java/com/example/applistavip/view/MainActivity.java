@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         PessoaController pessoaController = new PessoaController();
 
         Pessoa pessoa = new Pessoa();
@@ -50,7 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(edtTxtCurso.getText().toString());
                 pessoa.setTelefoneContato(edtTxtTelefone.getText().toString());
 
+
                 pessoaController.salvar(pessoa);
+
+                Toast.makeText(MainActivity.this, "Salvo!", Toast.LENGTH_SHORT).show();
+
             }
         });
 
