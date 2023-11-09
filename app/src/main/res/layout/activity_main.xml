@@ -17,6 +17,7 @@
         android:text="@string/txt_title"
         android:textStyle="bold"/>
     <EditText
+        android:id="@+id/edtTxtNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -24,18 +25,21 @@
         android:layout_margin="16dp"
         android:hint="@string/hint_insira_seu_nome"/>
     <EditText
+        android:id="@+id/edtTxtSobrenome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
         android:hint="@string/hint_insira_seu_sobrenome"/>
     <EditText
+        android:id="@+id/edtTxtCurso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:layout_margin="16dp"
         android:hint="@string/hint_insira_seu_curso"/>
     <EditText
+        android:id="@+id/edtTxtTelefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -49,6 +53,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnLimpar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -57,6 +62,7 @@
             android:text="@string/txt_btn_limpar"/>
 
         <Button
+            android:id="@+id/btnSalvar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -67,6 +73,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnFinalizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
