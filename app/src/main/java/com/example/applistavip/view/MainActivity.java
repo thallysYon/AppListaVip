@@ -18,15 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //creating "pessoa" object
         Pessoa pessoa = new Pessoa();
 
-        //edittexts
         EditText edtTxtNome = findViewById(R.id.edtTxtNome);
         EditText edtTxtSobrenome = findViewById(R.id.edtTxtSobrenome);
         EditText edtTxtCurso = findViewById(R.id.edtTxtCurso);
         EditText edtTxtTelefone = findViewById(R.id.edtTxtTelefone);
-        //buttons
+
         Button  btnLimpar = findViewById(R.id.btnLimpar);
         Button  btnSalvar = findViewById(R.id.btnSalvar);
         Button  btnFinalizar = findViewById(R.id.btnFinalizar);
