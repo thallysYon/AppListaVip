@@ -18,18 +18,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //creating "pessoa" object
         Pessoa pessoa = new Pessoa();
 
-        //edittexts
         EditText edtTxtNome = findViewById(R.id.edtTxtNome);
         EditText edtTxtSobrenome = findViewById(R.id.edtTxtSobrenome);
         EditText edtTxtCurso = findViewById(R.id.edtTxtCurso);
         EditText edtTxtTelefone = findViewById(R.id.edtTxtTelefone);
-        //buttons
-        Button  btnLimpar = findViewById(R.id.btnLimpar);
-        Button  btnSalvar = findViewById(R.id.btnSalvar);
-        Button  btnFinalizar = findViewById(R.id.btnFinalizar);
+
+        Button btnLimpar = findViewById(R.id.btnLimpar);
+        Button btnSalvar = findViewById(R.id.btnSalvar);
+        Button btnFinalizar = findViewById(R.id.btnFinalizar);
 
         btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(edtTxtCurso.getText().toString());
                 pessoa.setTelefoneContato(edtTxtTelefone.getText().toString());
 
-                Toast.makeText(MainActivity.this, "Salvo!" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Salvo!", Toast.LENGTH_SHORT).show();
             }
         });
 
