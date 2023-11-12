@@ -62,9 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 listavip.putString("primeiroNome", pessoa.getPrimeiroNome());
                 listavip.putString("sobrenome", pessoa.getSobrenome());
                 listavip.putString("curso", pessoa.getCursoDesejado());
-                listavip.putString("numero", pessoa.getTelefoneContato());
-
-                listavip.apply();
+                listavip.putString("numero", pessoa.getTelefoneContato());listavip.apply();
 
                 Toast.makeText(MainActivity.this, "Salvo!", Toast.LENGTH_SHORT).show();
 
