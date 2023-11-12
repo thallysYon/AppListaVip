@@ -56,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 edtTxtSobrenome.setText("");
                 edtTxtCurso.setText("");
                 edtTxtTelefone.setText("");
+
+                listavip.clear();
+                listavip.apply();
+
             }
         });
 
@@ -67,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(edtTxtCurso.getText().toString());
                 pessoa.setTelefoneContato(edtTxtTelefone.getText().toString());
 
-
                 pessoaController.salvar(pessoa);
 
                 listavip.putString("primeiroNome", pessoa.getPrimeiroNome());
@@ -77,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 listavip.apply();
 
                 Toast.makeText(MainActivity.this, "Salvo!", Toast.LENGTH_SHORT).show();
-
             }
         });
 
