@@ -27,7 +27,13 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor listavip = sharedPreferences.edit();
 
         PessoaController pessoaController = new PessoaController();
+
         Pessoa pessoa = new Pessoa();
+
+        pessoa.setPrimeiroNome(sharedPreferences.getString("primeiroNome", "Erro"));
+        pessoa.setSobrenome(sharedPreferences.getString("sobrenome", "Erro"));
+        pessoa.setCursoDesejado(sharedPreferences.getString("curso", "Erro"));
+        pessoa.setTelefoneContato(sharedPreferences.getString("numero", "Erro"));
 
         EditText edtTxtNome = findViewById(R.id.edtTxtNome);
         EditText edtTxtSobrenome = findViewById(R.id.edtTxtSobrenome);
@@ -37,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         Button btnLimpar = findViewById(R.id.btnLimpar);
         Button btnSalvar = findViewById(R.id.btnSalvar);
         Button btnFinalizar = findViewById(R.id.btnFinalizar);
+
+        edtTxtNome.setText(pessoa.getPrimeiroNome());
+        edtTxtSobrenome.setText(pessoa.getSobrenome());
+        edtTxtCurso.setText(pessoa.getCursoDesejado());
+        edtTxtTelefone.setText(pessoa.getTelefoneContato());
 
         btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
                 listavip.putString("primeiroNome", pessoa.getPrimeiroNome());
                 listavip.putString("sobrenome", pessoa.getSobrenome());
                 listavip.putString("curso", pessoa.getCursoDesejado());
-                listavip.putString("numero", pessoa.getTelefoneContato());listavip.apply();
+                listavip.putString("numero", pessoa.getTelefoneContato());
+                listavip.apply();
 
                 Toast.makeText(MainActivity.this, "Salvo!", Toast.LENGTH_SHORT).show();
 
