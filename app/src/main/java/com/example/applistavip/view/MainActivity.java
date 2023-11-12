@@ -2,6 +2,7 @@ package com.example.applistavip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,9 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final String NOME_PREFERENCES = "pref_listavip";
+
+        SharedPreferences sharedPreferences = getSharedPreferences(NOME_PREFERENCES, 0);
+
+        SharedPreferences.Editor listavip = sharedPreferences.edit();
 
         PessoaController pessoaController = new PessoaController();
-
         Pessoa pessoa = new Pessoa();
 
         EditText edtTxtNome = findViewById(R.id.edtTxtNome);
@@ -53,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
 
                 pessoaController.salvar(pessoa);
+
+                listavip.putString("primeiroNome", pessoa.getPrimeiroNome());
+                listavip.putString("sobrenome", pessoa.getSobrenome());
+                listavip.putString("curso", pessoa.getCursoDesejado());
+                listavip.putString("numero", pessoa.getTelefoneContato());listavip.apply();
 
                 Toast.makeText(MainActivity.this, "Salvo!", Toast.LENGTH_SHORT).show();
 
